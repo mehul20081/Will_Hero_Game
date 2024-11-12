@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="10000.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.helloapplication.game">
+   <children>
+      <ImageView fitHeight="660.0" fitWidth="2045.0" layoutX="1188.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newBG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="660.0" fitWidth="2045.0" layoutX="2388.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newBG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="660.0" fitWidth="2045.0" layoutX="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newBG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="660.0" fitWidth="2045.0" layoutX="3588.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newBG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="pause" fitHeight="66.0" fitWidth="55.0" layoutX="1078.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../pause-button-png-29656.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island" fitHeight="151.0" fitWidth="253.0" layoutX="76.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island1" fitHeight="209.0" fitWidth="236.0" layoutX="428.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_03.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaultchest" fitHeight="55.0" fitWidth="78.0" layoutX="1073.0" layoutY="312.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../wep_0006%20%2356893.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island2" fitHeight="188.0" fitWidth="257.0" layoutX="1005.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_05.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="226.0" fitWidth="196.0" layoutX="1089.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Tree4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc" fitHeight="55.0" fitWidth="64.0" layoutX="467.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="55.0" layoutX="33.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Coin.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="coinscounter" layoutX="79.0" layoutY="25.0" prefHeight="50.0" prefWidth="92.0" text="0">
+         <font>
+            <Font size="32.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8100000023841858" green="0.7953821420669556" blue="0.10530000180006027" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="counter" layoutX="593.0" layoutY="23.0" text="0">
+         <font>
+            <Font size="34.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.504739336492891" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9342105388641357" green="0.899610161781311" blue="0.899610161781311" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Group fx:id="chests" layoutX="1000.0" layoutY="250.0" />
+      <ImageView fitHeight="226.0" fitWidth="196.0" layoutX="4037.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Tree4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island7" fitHeight="242.0" fitWidth="253.0" layoutX="2741.0" layoutY="316.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island4" fitHeight="216.0" fitWidth="269.0" layoutX="1714.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island3" fitHeight="120.0" fitWidth="269.0" layoutX="1345.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_02.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="island5" fitHeight="198.0" fitWidth="221.0" layoutX="2056.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="death" fitHeight="65.0" fitWidth="55.0" layoutX="506.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../MonsterFatality.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="knife" fitHeight="63.0" fitWidth="18.0" layoutX="199.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+         <image>
+            <Image url="@../../../knife.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island6" fitHeight="248.0" fitWidth="269.0" layoutX="2388.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_06.png" />
+         </image>
+      </ImageView>
+      <AmbientLight layoutX="223.0" layoutY="61.0" lightOn="true">
+         <color>
+            <Color red="0.6447368264198303" green="0.48952242732048035" blue="0.48952242732048035" />
+         </color>
+      </AmbientLight>
+      <ImageView fx:id="rorc1" fitHeight="55.0" fitWidth="64.0" layoutX="1758.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../RedOrc1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaultchest2" fitHeight="55.0" fitWidth="78.0" layoutX="3447.0" layoutY="335.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../wep_0006%20%2356893.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc11" fitHeight="55.0" fitWidth="64.0" layoutX="1423.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island8" fitHeight="209.0" fitWidth="236.0" layoutX="3100.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_03.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="2901.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Tree3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island10" fitHeight="248.0" fitWidth="269.0" layoutX="3665.0" layoutY="352.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_06.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island9" fitHeight="158.0" fitWidth="196.0" layoutX="3420.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_03.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="hero" fitHeight="61.0" fitWidth="68.0" layoutX="83.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true" rotate="8.0">
+         <image>
+            <Image url="@../../../hit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4293.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc3" fitHeight="55.0" fitWidth="64.0" layoutX="2180.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4273.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc5" fitHeight="55.0" fitWidth="64.0" layoutX="2835.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc6" fitHeight="55.0" fitWidth="64.0" layoutX="3195.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island12" fitHeight="248.0" fitWidth="269.0" layoutX="4487.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_06.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4253.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4222.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rorc2" fitHeight="55.0" fitWidth="64.0" layoutX="4007.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../RedOrc1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc8" fitHeight="55.0" fitWidth="64.0" layoutX="3761.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc7" fitHeight="55.0" fitWidth="64.0" layoutX="3537.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaulttnt" fitHeight="61.0" fitWidth="63.0" layoutX="2084.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../TNT.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="tnts" layoutX="1880.0" layoutY="130.0" />
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4318.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaulttnt1" fitHeight="61.0" fitWidth="63.0" layoutX="4590.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../TNT.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4369.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc4" fitHeight="55.0" fitWidth="64.0" layoutX="2579.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4343.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="63.0" fitWidth="107.0" layoutX="4297.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Bush1_4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="660.0" fitWidth="2045.0" layoutX="5969.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newBG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="660.0" fitWidth="2045.0" layoutX="6803.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../newBG.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island16" fitHeight="158.0" fitWidth="196.0" layoutX="5424.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_03.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaultchest1" fitHeight="55.0" fitWidth="78.0" layoutX="4966.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../wep_0006%20%2356893.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaultcoinchest" fitHeight="55.0" fitWidth="92.0" layoutX="2455.0" layoutY="272.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pirate_chest__openning_001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island28" fitHeight="1625.0" fitWidth="190.0" layoutX="11944.0" layoutY="-166.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@../../../Merged_document.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island20" fitHeight="242.0" fitWidth="253.0" layoutX="5809.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island19" fitHeight="242.0" fitWidth="253.0" layoutX="6287.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_11.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island23" fitHeight="120.0" fitWidth="269.0" layoutX="7613.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_02.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="island21" fitHeight="248.0" fitWidth="269.0" layoutX="6803.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_06.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island11" fitHeight="248.0" fitWidth="269.0" layoutX="3984.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_06.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island27" fitHeight="1625.0" fitWidth="190.0" layoutX="10446.0" layoutY="-166.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+         <image>
+            <Image url="@../../../Merged_document.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="coinchests" layoutX="2350.0" layoutY="209.0" scaleX="0.05" scaleY="0.05" />
+      <ImageView fx:id="island15" fitHeight="120.0" fitWidth="269.0" layoutX="4919.0" layoutY="501.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_02.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="defaultcoinchest1" fitHeight="55.0" fitWidth="92.0" layoutX="6367.0" layoutY="245.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Pirate_chest__openning_001.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="defaultchest3" fitHeight="55.0" fitWidth="78.0" layoutX="8022.0" layoutY="202.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../wep_0006%20%2356893.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island22" fitHeight="248.0" fitWidth="269.0" layoutX="7278.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_06.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="axeicon" fitHeight="75.0" fitWidth="50.0" layoutX="109.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../throwingaxe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="axeupgrade" fitHeight="65.0" fitWidth="47.0" layoutX="252.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../axeupgrade.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="knifeupgrade1" fitHeight="70.0" fitWidth="18.0" layoutX="279.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+         <image>
+            <Image url="@../../../knifeupgrade.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="knifeupgrade" fitHeight="75.0" fitWidth="19.0" layoutX="82.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+         <image>
+            <Image url="@../../../knifeupgrade.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="orc4" fitHeight="55.0" fitWidth="64.0" layoutX="5561.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="knifeicon" fitHeight="75.0" fitWidth="52.0" layoutX="32.0" layoutY="564.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../knife.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="axe" fitHeight="50.0" fitWidth="34.0" layoutX="186.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../throwingaxe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rorc4" fitHeight="55.0" fitWidth="64.0" layoutX="8985.0" layoutY="307.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../RedOrc1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="knife1" fitHeight="63.0" fitWidth="18.0" layoutX="231.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" visible="false">
+         <image>
+            <Image url="@../../../knife.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island24" fitHeight="120.0" fitWidth="269.0" layoutX="8003.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_02.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="island25" fitHeight="120.0" fitWidth="269.0" layoutX="8777.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_02.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <ImageView fx:id="bossorc" fitHeight="242.0" fitWidth="248.0" layoutX="11352.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../4%20mini-boss.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="island26" fitHeight="120.0" fitWidth="269.0" layoutX="9454.0" layoutY="486.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../T_Islands_02.png" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Pane fx:id="quitpane" layoutX="363.0" layoutY="88.0" prefHeight="399.0" prefWidth="382.0" visible="false">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a8c94" height="385.0" layoutX="-35.0" layoutY="67.0" opacity="0.45" stroke="#ededed31" strokeType="INSIDE" style="-fx-background-radius: 9px;" width="527.0" />
+            <Button fx:id="finalexit" layoutY="284.0" mnemonicParsing="false" opacity="0.82" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: #ff0000; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="YES">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="quitno" layoutX="270.0" layoutY="284.0" mnemonicParsing="false" opacity="0.82" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: #0fea88; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="NO">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Label layoutX="135.0" layoutY="115.0" prefHeight="55.0" prefWidth="202.0" text="QUIT GAME?">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <effect>
+                  <Glow level="0.98" />
+               </effect>
+            </Label>
+            <AmbientLight color="CHARTREUSE" lightOn="true" />
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Pane>
+      <Pane fx:id="pausepane" layoutX="290.0" layoutY="67.0" prefHeight="439.0" prefWidth="527.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3a8c94" height="364.0" layoutY="40.0" opacity="0.45" stroke="#ededed31" strokeType="INSIDE" style="-fx-background-radius: 9px;" width="527.0" />
+            <Button fx:id="exit" layoutX="32.0" layoutY="259.0" mnemonicParsing="false" opacity="0.82" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: #0fea88; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="Quit">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="resume" layoutX="288.0" layoutY="259.0" mnemonicParsing="false" opacity="0.82" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: #0fea88; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="Resume">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="restart" layoutX="288.0" layoutY="149.0" mnemonicParsing="false" opacity="0.82" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: #0fea88; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="Restart">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="savee" layoutX="32.0" layoutY="149.0" mnemonicParsing="false" opacity="0.82" prefHeight="64.0" prefWidth="196.0" style="-fx-background-color: #0fea88; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="Save">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Label layoutX="208.0" layoutY="40.0" prefHeight="63.0" prefWidth="115.0" text="Menu" textFill="#e5ff00" underline="true">
+               <font>
+                  <Font size="44.0" />
+               </font>
+               <effect>
+                  <Glow level="0.98" />
+               </effect>
+            </Label>
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </Pane>
+      <Pane fx:id="gameover" layoutX="351.0" layoutY="67.0" prefHeight="440.0" prefWidth="498.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000030" height="440.0" layoutX="-1.0" layoutY="-1.0" stroke="TRANSPARENT" strokeType="INSIDE" width="499.0" />
+            <ImageView fx:id="goimg" fitHeight="96.0" fitWidth="361.0" layoutX="68.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../174682-logo-game-over-free-hd-image.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="restart1" layoutX="25.0" layoutY="355.0" mnemonicParsing="false" opacity="0.82" prefHeight="55.0" prefWidth="162.0" style="-fx-background-color: #0fea88; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="Restart">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Button fx:id="quitbutton" layoutX="302.0" layoutY="352.0" mnemonicParsing="false" opacity="0.82" prefHeight="61.0" prefWidth="162.0" style="-fx-background-color: #ff0000; -fx-background-radius: 15px; -fx-text-fill: #ffffff;" text="Quit">
+               <font>
+                  <Font size="29.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.67">
+                     <color>
+                        <Color red="0.9098039269447327" green="0.9098039269447327" blue="0.6901960968971252" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <Label layoutX="174.0" layoutY="181.0" prefHeight="55.0" prefWidth="149.0" text="Save Me!" textFill="#f2f2f2">
+               <font>
+                  <Font name="SansSerif Bold" size="34.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="respawn" fitHeight="55.0" fitWidth="182.0" layoutX="163.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true" style="fx-background-radius: 15px;">
+               <image>
+                  <Image url="@../../../Screenshot%202021-12-10%20at%204.33.29%20PM.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="219.0" layoutY="364.0" prefHeight="39.0" prefWidth="59.0" text="OR" textFill="#f5f5f5">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="goimg1" fitHeight="249.0" fitWidth="338.0" layoutX="91.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../you-win-lettering-pop-art-text-banner_185004-60.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Group fx:id="coinchests1" layoutX="6280.0" layoutY="100.0" />
+      <Group fx:id="chestss1" layoutX="4966.0" layoutY="452.0" />
+      <Group fx:id="chestss2" layoutX="3447.0" layoutY="335.0" />
+      <Group fx:id="chestss3" layoutX="8022.0" layoutY="202.0" />
+      <Group fx:id="tnts1" layoutX="4400.0" layoutY="150.0" />
+      <ImageView fx:id="orc5" fitHeight="55.0" fitWidth="64.0" layoutX="6879.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../2%20%2338727.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="rorc3" fitHeight="55.0" fitWidth="64.0" layoutX="5984.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../RedOrc1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="time" layoutX="962.0" layoutY="595.0" prefHeight="50.0" prefWidth="196.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="current" layoutX="329.0" layoutY="546.0" prefHeight="55.0" prefWidth="301.0" text="Label">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="high" layoutX="633.0" layoutY="538.0" prefHeight="65.0" prefWidth="361.0" text="Current : NA">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
